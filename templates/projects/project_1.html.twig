@@ -1,0 +1,24 @@
+{% extends './base.html.twig' %}  
+
+{% block body %}
+            {{ encore_entry_link_tags('project_1') }}
+<section class="project1">
+    <div class="container">
+        <div class="presentation">
+            <h1>Maom</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quaerat id odio eius aspernatur explicabo deserunt, quas ducimus, fugit dolorem porro officia facilis magnam. Culpa non pariatur nam consectetur inventore!
+            Eos amet illo deserunt ducimus, officia odit atque expedita omnis natus labore tempora! Molestias excepturi hic reiciendis eos, illum et a nostrum incidunt nesciunt commodi asperiores cupiditate, labore magnam laudantium!
+            </p>
+        </div>
+        <div class="project_show">
+            <div class="col-6 project1_img">
+                <img src="{{asset('build/project1_figma1.png')}}" alt="">
+                <img src="{{asset('build/project1_figma2.png')}}" alt="">
+            </div>
+            <div class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque maiores beatae iusto, dicta expedita commodi vitae eos sint unde saepe nihil culpa aspernatur quidem ipsa architecto! Ea necessitatibus sed veniam.</div>
+        </div>
+    </div>
+</section>    
+        {{ encore_entry_script_tags('project_1') }}
+
+{% endblock %}

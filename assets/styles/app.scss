@@ -1,0 +1,43 @@
+html
+{
+    scroll-behavior:smooth
+}
+body {
+    background-color: #142321f6;
+    color: aliceblue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+// CSS pour l'appartition des éléments
+.reveal-loaded [class*="reveal-"]
+{
+    opacity: 0;
+    transform: translateY(30px);
+    
+}
+.reveal-loaded .reveal-visible
+{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5, 0,0,1);
+}
+.reveal-loaded .reveal-2{
+    transition-delay: .3s;
+    transition-property: opacity, transform;
+}
+.reveal-loaded .reveal-3{
+    transition-property: opacity, transform;
+    transition-delay: .5s;
+}
+.reveal-loaded .reveal-4{
+    transition-property: opacity, transform;
+    transition-delay: .7s;
+}
+.reveal-loaded .reveal-5{
+    transition-property: opacity, transform;
+    transition-delay: .9s;
+}
+.reveal-loaded .reveal-6{
+    transition-property: opacity, transform;
+    transition-delay: 1.1s;
+}

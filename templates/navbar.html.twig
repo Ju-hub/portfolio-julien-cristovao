@@ -1,0 +1,29 @@
+    {% block css %}
+    {{ encore_entry_link_tags('navBar') }}
+    {% endblock %}
+
+<div class="container">
+  <nav>
+      <div class="nav-icon">
+        <a href="{{url('app_home')}}"><img src="{{asset ('build/logoCristo.png')}}" alt="logo-JC"></a>
+      </div>
+      
+    <div class="main-navlinks"><button class="hamburger" type="button"
+    aria-label="Toggle navigation"
+    aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+      </button>
+    <div class="navlinks-container">
+      <a href="#projects">REALISATIONS</a>
+      <a href="#section__contact">CONTACT</a>
+
+    </div>
+
+    </div>
+  </nav>
+</div>
+{% block javascripts %}
+  {{ encore_entry_script_tags('navBar') }}
+{% endblock %}

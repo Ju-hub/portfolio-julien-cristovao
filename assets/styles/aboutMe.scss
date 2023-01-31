@@ -1,0 +1,34 @@
+.aboutMe
+{
+    min-height:100vh;
+    display: flex;
+    
+}
+
+.juju__image 
+{
+    // margin: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-right: auto;    
+    margin-top: 5%;
+}
+.juju__body
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: auto;
+    font-size: X-large;
+    font-weight: 200;
+    
+}
+.juju__title
+{
+    font-size: 80px;
+    color: darkgoldenrod;
+    font-weight: 300;
+    max-width: 540px;
+    line-height: 1;
+}

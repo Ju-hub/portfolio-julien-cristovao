@@ -1,0 +1,19 @@
+section.project1{
+    height: 100vh;
+}
+.project_show{
+    display: flex;
+    flex-direction: row;
+}
+.project1{
+    margin-top: 30px;
+}
+.project1_img{
+    text-align: center;
+}
+.project1_img img{
+    
+    min-height: 400px;
+    min-width: 500px;
+    margin-bottom: 20px;
+}
