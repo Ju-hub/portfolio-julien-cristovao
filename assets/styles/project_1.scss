@@ -4,16 +4,67 @@ section.project1{
 .project_show{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    
 }
 .project1{
     margin-top: 30px;
 }
-.project1_img{
-    text-align: center;
+
+.project_show img{
+    width: 350px;
+    height: 260px;
+    border-radius: 20px;
+    margin: 15px 162px 0 162px;
+    overflow: hidden ;
 }
-.project1_img img{
+.presentation{
+    padding:10px 10px 10px 10px;
+    margin: 20px 0 20px 0;
+}
+.project_show a img:hover
+{
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+.modal{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 64, 64, 0.8);
     
-    min-height: 400px;
-    min-width: 500px;
-    margin-bottom: 20px;
+    // margin: 10px 0 10px 0;
+    
+}
+.modal-content{
+    background: none;
+    border: none;
+}
+.modal-fullscreen{ 
+    width: 80%;
+    margin: auto;   
+}
+.carousel-inner img{
+    position: relative;
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+}
+#echap {
+    width: 180px;
+    border: none;
+    background: none;
+    color: darkgoldenrod;
+    margin-left: 92%;
+    margin-top: 5px;
+}
+button.carousel-control-next, button.carousel-control-prev{
+    width:30px;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -25px;
 }

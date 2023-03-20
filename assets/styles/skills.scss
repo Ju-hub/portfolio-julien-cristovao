@@ -1,12 +1,17 @@
 .skills {
   background-color: #163e31c7;
-  height: 700px;
+  height: 100vh;
 }
+
 .skills__skills{
   font-size:x-large;
   color: darkgoldenrod;
   padding: 50px; 
   
+}
+.skills_all_blocks{
+  display: flex;
+  justify-content: space-around;
 }
 .skills__block
 {
@@ -14,7 +19,7 @@
   font-size: 1.2rem;
   max-width: 20rem;
   min-width: 380px;
-  min-height: 300px;
+  min-height: auto;
   margin-top: 50px;
   border: 0.8px ridge rgba(22, 108, 49, 0.605);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
@@ -37,3 +42,20 @@
 .skills__block p{
   font-size: medium;
 }
+//////////// RESPONSIVE /////////////////
+
+
+@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
+  .skills_all_blocks{
+    display: block;
+  }
+  .skills__block{
+    min-width: 250px;
+    margin: auto;
+  }
+  .skills{
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  }

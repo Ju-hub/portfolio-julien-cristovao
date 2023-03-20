@@ -75,11 +75,6 @@ nav
   
 
 }
-// .sign-btns button:nth-child(2){
-//   border: none;
-//   background: #92c3eeb7;
-// }
-
 .main-navlinks{
   margin: auto;
 }
@@ -95,7 +90,7 @@ nav
   position: relative;
   }
   .nav-icon{
-    order: 2; //order change l'ordre des éléments 
+    order: 2; //order: change l'ordre des éléments 
     margin: 0 auto;
   }
   .nav-icon span {
@@ -106,8 +101,10 @@ nav
     order: 1;
     
   }
+  
   /* Hamburger */
   .hamburger{
+    position: relative;
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -115,7 +112,6 @@ nav
     display: flex;
     background: none;
     align-items: center;
-    position: relative;
   }
   .hamburger span {
     display: block;
@@ -152,13 +148,14 @@ nav
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 1;
+    background: rgb(52, 61, 61);
     position: absolute;
     top: 100%;
-    left: 0;
-    height: 100vh;
-    padding: 15px 20px 15px 20px;
+    height: 150px;
+    // padding: 15px 20px 15px 20px;
     // border-right: 1px solid #c5c5c6;
-    transform: translate(-100%);
+    transform: translate(-120%);
     
   }
   .open {
@@ -174,7 +171,6 @@ nav
   
   .nav-authentication {
     order: 3;
-  
     margin-left: 0;
   }
 }

@@ -34,3 +34,6 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function(r){
     observer.observe(r)
     
 })
+
+
+

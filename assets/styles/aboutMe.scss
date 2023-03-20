@@ -2,7 +2,6 @@
 {
     min-height:100vh;
     display: flex;
-    
 }
 
 .juju__image 
@@ -32,3 +31,24 @@
     max-width: 540px;
     line-height: 1;
 }
+
+//////////// RESPONSIVE /////////////////
+
+
+@media only screen and (min-device-width : 220px) and (max-device-width : 600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .aboutMe{
+        margin: 0;
+        display: block;
+        font-size: small;
+        text-align: center;
+    } 
+    .juju__title{
+        font-size: 30px;
+    }
+    .juju__body{
+        font-size: large;
+    }
+    }

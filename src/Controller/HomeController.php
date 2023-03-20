@@ -20,7 +20,7 @@ class HomeController extends AbstractController
     {
         return $this->render('projects/project_1.html.twig');
     }
-    
+
     #[Route('/project2', name: 'project_2')]
     public function project_2(): Response
     {
