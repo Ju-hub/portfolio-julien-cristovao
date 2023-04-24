@@ -22,16 +22,18 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
-    .addEntry('app', './assets/app.js')
-    .addEntry('navBar', './assets/navBar.js')
-    .addEntry('aboutMe', './assets/aboutMe.js')
-    .addEntry('skills', './assets/skills.js')
-    .addEntry('projects', './assets/projects.js')
-    .addEntry('footer', './assets/footer.js')
-    .addEntry('project_1', './assets/project_1.js')
+    .addEntry('app', './assets/js/app.js')
+    .addEntry('navBar', './assets/js/navBar.js')
+    .addEntry('aboutMe', './assets/js/aboutMe.js')
+    .addEntry('skills', './assets/js/skills.js')
+    .addEntry('projects', './assets/js/projects.js')
+    .addEntry('contact', './assets/js/contact.js')
+    .addEntry('footer', './assets/js/footer.js')
+    .addEntry('project_1', './assets/js/project_1.js')
+    
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
-    .enableStimulusBridge('./assets/controllers.json')
+    .enableStimulusBridge('./assets/js/controllers.json')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

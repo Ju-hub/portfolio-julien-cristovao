@@ -1,7 +1,19 @@
 {% extends './base.html.twig' %}  
 
 {% block body %}
-    
-    
-
+    <div class="container mt-5"><h1 class="text-center">Bonito</h1>
+        <div class="d-flex mt-5">
+            <div class="col-6">
+                <p>Il s'agit d'un projet personnel de fin d'étude que j'ai présenté lors de la validation de ma certifocation DWWM.</p>
+                <p>Le principe étant de réaliser un site internet de la réalisation d'un cahier des charges, diagrammes UML jusqu'à la mise en production.</p>
+                <p>J'ai décidé de réaliser un site e-commerce pour une marque de mode pour enfant Bonito.</p>
+            </div>
+            <div class="col-6" style="background:red; height:300px">
+                <div class="project3_img">
+                        <a href="#modalWindow" data-bs-toggle="modal" type="button"><img src="{{asset('build/project3/projet3_maquette.png')}}" alt="maom_1"></a> 
+                        <a href="#modalWindow" data-bs-toggle="modal" type="button" ><img src="{{asset('build/project3/maom_1.png')}}" alt="maom_2"> </a>
+                    </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -1,39 +1,31 @@
-.projects {
-    height: 700px;
-}
+
 .projects__title {
     padding: 50px;
     font-size: x-large;
     color: darkgoldenrod;
     padding: 50px;
 }
-.card__body {
-    width: 100%;
-    height: 50%;
-    padding: 10px 10px 10px 10px;
-}
 .card {
+    
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    height: 400px;
     background: none;
     border: none;
     margin: auto;
     margin-top: 20px;
-    scroll-snap-type: x mandatory;
+    
 }
 .card__project {
-    flex: 1 0 230px;
+    
     height: 350px;
     width: 230px;
     margin-right: 20px;
     background: #163e31c7;
     border: 0.8px ridge rgba(22, 108, 49, 0.605);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
     overflow: hidden;
-    scroll-snap-align: start;
-    
 }
 .card__project img:hover {
     transform: scale(1.08);
@@ -46,6 +38,11 @@
     width: 100%;
     height: 50%;
     transition: all 0.3s ease-out
+}
+.card__body {
+    width: 100%;
+    height: 50%;
+    padding: 10px 10px 10px 10px;
 }
 .card p {
     font-size: small;
@@ -104,28 +101,19 @@
         right: -9px;
     }  
 }
-////////////// ScrollBar /////////////////
-::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
-    
-}
-
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-    background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #3d4852;
-    border-radius: 3px;
-}
 
 //////////// RESPONSIVE /////////////////
 
 
 @media only screen and (min-device-width : 220px) and (max-device-width : 600px) {
-    .card{
-        overflow-x: hidden;
+    section.projects{
+        height: auto;
+        display: block;
     }
+    .card{
+        
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    
     }

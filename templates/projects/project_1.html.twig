@@ -5,18 +5,28 @@
 <section class="project1">
     <div class="container">
         <div class="presentation">
-                <h1>Maom</h1>
-                <p>Il s'agit d'un site vitrine pour exposer les réalisations d'une décoratrice d'intérieur.</p>
+                <h1 class="text-center mb-5">Maom</h1>
+                <h4 class='mb-5'>Contexte</h4>
+                <p>Création d'un site vitrine pour un client désireux d'avoir un support lui permettant d'exposer ses réalisations mais aussi d'élargir sa base clientèle.  </p>
         </div>
         <div class="project_show">
-                <div class="col-6">
+                <div class="col-6 col-sm">
                     <div class="project1_img">
                         <a href="#modalWindow" data-bs-toggle="modal" type="button"> <img src="{{asset('build/project1_figma1.png')}}" alt="maquette_1"></a>
                         <a href="#modalWindow" data-bs-toggle="modal" type="button"> <img src="{{asset('build/project1_figma2.png')}}" alt="maquette_2"></a>
                     </div>
                 </div>
-                <div class="col-6">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque maiores beatae iusto, dicta expedita commodi vitae eos sint unde saepe nihil culpa aspernatur quidem ipsa architecto! Ea necessitatibus sed veniam.</p> 
+                <div class="col-6 col-sm">
+                    <p>Après plusieurs échanges et conseils, je récupère les maquettes Figma qui me seront d'une aide considérable pour le coté front.
+                    <p>Côté Back, il ressort trois éléments a réaliser :</p>  
+                    <ul>
+                        <li>Un carousel (Bootstrap)</li>
+                        <li>Un formulaire de contact (Symfony Form)</li>
+                        <li>L'envoi d'un mail lors de la soumission du formaulaire (Symfony Mailer) </li>
+                    </ul>
+
+                    
+                    </p> 
                     <div class="project2_img">
                         <a href="#modalWindow" data-bs-toggle="modal" type="button"><img src="{{asset('build/maom_4.png')}}" alt="maom_1"></a> 
                         <a href="#modalWindow" data-bs-toggle="modal" type="button" ><img src="{{asset('build/maom_1.png')}}" alt="maom_2"> </a>
@@ -27,7 +37,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="modalWindow" data-bs-keyboard="true" tabindex="-1" aria-labelledby="modal carousel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog">
     <div class="modal-content">
         <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="echap"><i class="fa-solid fa-x"></i></button>
 
@@ -35,22 +45,35 @@
         <div id="carouselExampleIndicators" class="carousel slide">    
                     <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <img src="{{asset('build/maom_figma3.png')}}" class="d-block" alt="">
+                                    <figure><figcaption>Maquette figma 1</figcaption><img src="{{asset('build/maom_figma3.png')}}" class="d-block" alt="maquette_1"></figure>
                                 </div>
                     <div class="carousel-item">
-                                <img src="{{asset('build/figma_maom_services.png')}}" class="d-block" alt="">
+                                <figure><figcaption>Maquette figma 2</figcaption><img src="{{asset('build/figma_maom_services.png')}}" class="d-block" alt="maquette_2"></figure>
+                                
                                 </div>
                     <div class="carousel-item">
-                                <img src="{{asset('build/maom_figma_4.png')}}" class="d-block" alt="">
+                                <figure><figcaption>Maquette figma 3</figcaption><img src="{{asset('build/project1_figma_fullscreen.png')}}" class="d-block" alt="maquette_3"></figure>
+                                
                                 </div>
                     <div class="carousel-item">
-                                <img src="{{asset('build/projet_maom.png')}}" class="d-block" alt="">
+                                <figure><figcaption>Maquette figma 4</figcaption><img src="{{asset('build/maom_figma_4.png')}}" class="d-block" alt="maquette_4"></figure>
+                                
                                 </div>
                     <div class="carousel-item">
-                                <img src="{{asset('build/maom_4.png')}}" class="d-block" alt="">
+                                <figure><figcaption>Apercu Site 1</figcaption><img src="{{asset('build/projet_maom.png')}}" class="d-block" alt="maom_1"></figure>
+                                
                                 </div>
                     <div class="carousel-item">
-                                <img src="{{asset('build/maom_2.jpg')}}" class="d-block" alt="">
+                                <figure><figcaption>Apercu Site 2</figcaption><img src="{{asset('build/maom_4.png')}}" class="d-block" alt="maom_2"></figure>
+                                
+                                </div>
+                    <div class="carousel-item">
+                                <figure><figcaption>Apercu Site 3</figcaption><img src="{{asset('build/maom_projet_caroussel_website.png')}}" class="d-block" alt="maom_3"></figure>
+                                
+                                </div>
+                    <div class="carousel-item">
+                                <figure><figcaption>Apercu Site 4</figcaption><img src="{{asset('build/maom_2.jpg')}}" class="d-block" alt="maom_4"></figure>
+                                
                                 </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -61,7 +84,6 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
-                  
         </div>
         <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -70,12 +92,14 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
 
                 </div>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
             {{ encore_entry_script_tags('project_1') }}
-</section>    
+</section>   
 {% endblock %}

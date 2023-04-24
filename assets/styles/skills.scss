@@ -1,6 +1,7 @@
 .skills {
   background-color: #163e31c7;
-  height: 100vh;
+  min-height: 600px;
+  
 }
 
 .skills__skills{
@@ -11,7 +12,7 @@
 }
 .skills_all_blocks{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .skills__block
 {
@@ -45,17 +46,22 @@
 //////////// RESPONSIVE /////////////////
 
 
-@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 220px) and (max-device-width : 1142px) {
   .skills_all_blocks{
     display: block;
+    font-size: small;
   }
   .skills__block{
     min-width: 250px;
     margin: auto;
   }
+  .skills__block img{
+    width: 60px;
+    height: 70px;
+  }
   .skills{
     height: auto;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 
   }

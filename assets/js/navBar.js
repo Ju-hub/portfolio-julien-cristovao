@@ -1,4 +1,4 @@
-import './styles/nav.scss';
+import '../styles/nav.scss';
                                     
                         /*    Javascript NavBar      Gestion du bouton hamburger en mobile */
 const hamburgerToggler = document.querySelector(".hamburger");

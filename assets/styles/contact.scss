@@ -1,0 +1,25 @@
+section.contact{
+    height: 100vh;
+    background-color: #163e31c7;
+}
+.contact__title {
+    padding: 50px;
+    font-size: x-large;
+    color: darkgoldenrod;
+}
+#section__contact>.container>.text-start{
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (min-device-width : 220px) and (max-device-width : 1000px) {
+    #section__contact>.container>.text-start
+    {
+    width: 50%;
+    }
+    section.contact{
+        height: auto;
+    }
+
+
+}

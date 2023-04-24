@@ -1,0 +1,21 @@
+            {{ encore_entry_link_tags('contact') }}
+<section class="contact" id="section__contact">
+    <div class="container">
+        <div class="contact__title reveal-">
+            Contact
+        </div>
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success mt-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('error') %}
+            <div class="alert alert-danger mt-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+            <div class="text-start">
+            {{ form(form) }}
+            </div>
+    </div>
+</section>
