@@ -10,7 +10,8 @@ Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
     .copyFiles({
-        from: './assets/image'})
+        from: './assets/image'
+    })
     // public path used by the web server to access the output path
     .setPublicPath('/build')
     // only needed for CDN's or subdirectory deploy
@@ -30,7 +31,9 @@ Encore
     .addEntry('contact', './assets/js/contact.js')
     .addEntry('footer', './assets/js/footer.js')
     .addEntry('project_1', './assets/js/project_1.js')
-    
+    .addEntry('project_3', './assets/js/project_3.js')
+    .addEntry('project_4', './assets/js/project_4.js')
+    .addEntry('project_5', './assets/js/project_5.js')    
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)
     .enableStimulusBridge('./assets/js/controllers.json')
@@ -68,7 +71,7 @@ Encore
     // enables Sass/SCSS support
     .enableSassLoader()
 
-    .enableVueLoader()
+    .enableVueLoader(() => {}, { runtimeCompilerBuild: false })
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
 
